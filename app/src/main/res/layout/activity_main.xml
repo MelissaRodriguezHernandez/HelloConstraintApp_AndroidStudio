@@ -11,20 +11,22 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="127dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:text="TOAST"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/number_count"
-        android:layout_width="271dp"
-        android:layout_height="296dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
         android:autoSizeTextType="uniform"
         android:background="#00BCD4"
         android:fontFamily="sans-serif"
@@ -35,19 +37,18 @@
         android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,RtlCompat"
-        tools:layout_editor_absoluteY="61dp" />
+        app:layout_constraintStart_toEndOf="@+id/button_count"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlCompat" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="127dp"
-        android:layout_height="61dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="COUNT"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/number_count"
-        app:layout_constraintEnd_toStartOf="@+id/number_count" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
